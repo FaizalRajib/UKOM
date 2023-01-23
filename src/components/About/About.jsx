@@ -2,22 +2,12 @@ import React, {useEffect}from 'react'
 import './about.css'
 import img1 from '../../assets/img/lovepik-woman-hiking-icon-free-vector-illustration-png-image_401474125_wh1200.png'
 import img2 from '../../assets/img/433100.png'
-import img3 from '../../assets/img/png-transparent-illustration-of-man-customer-service-antop-antenna-inc-technical-support-online-customer-service-company-text-service.png'
+import img3 from '../../assets/img/69-695889_dealer-hotline-customer-service-vector.png'
 
-import video from '../../assets/video/Aurora Borealis - 90877.mp4'
+import video from '../../assets/video/Kotor - 31484.mp4'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-
-// https://images.pexels.com/photos/287240/pexels-photo-287240.jpeg?auto=compress&cs=tinysrgb&w=600
-
-// https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&w=600
-
-// https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&w=600
-
-// https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb&w=600
-
-
 
 const About = () => {
 
@@ -53,15 +43,16 @@ const About = () => {
             
           </div>
 
-          <div data-aos='fade-up' data-aos-duration='3000' className="singleItem">
+          <div data-aos='fade-up' data-aos-duration='2500' className="singleItem">
             <img src={img3} alt="" />
 
-            <h3>20000+ Mountains</h3>
+            <h3>11000+ Mountains</h3>
             <p>
               Research shows that a chace to break away from the normal rhythms of daily life reduces stress and impoves health and well-being.
             </p>
             
           </div>
+          
         </div>
 
         <div className="videoCard container">

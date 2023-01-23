@@ -29,10 +29,11 @@ const Footer = () => {
           </div>
 
           <div className="socials flex" data-aos='fade-up' data-aos-duration='2500'>
-            <ImFacebook className='icon'/>
-            <AiFillInstagram className='icon'/>
-            <AiFillGithub className='icon'/>
-            <BsTwitter className='icon'/>
+            <a href="#"><ImFacebook className='icon'/></a>
+            <a href="#"><AiFillInstagram className='icon'/></a>
+            <a href="#"><AiFillGithub className='icon'/></a>
+            <a href="#"><BsTwitter className='icon'/></a>
+            
           </div>
         </div>
         
@@ -83,9 +84,9 @@ const Footer = () => {
           <span className="email">usernmae@gmail.com</span>
 
         </div>
-
       </div>
     </div>
+    
   )
 }
 

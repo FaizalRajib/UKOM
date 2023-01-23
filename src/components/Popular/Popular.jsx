@@ -7,7 +7,9 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import axios from 'axios'
 
+
 const Popular = () => {
+  
   
   const [data, setData] = useState([])
 
@@ -15,7 +17,6 @@ const Popular = () => {
     axios("https://63547f47e64783fa8285a355.mockapi.io/Destination")
     .then((res) => {
       setData(res.data)
-      // console.log(res.data);
     });
   }, []);
 
@@ -85,6 +86,46 @@ const Popular = () => {
               )
             })
           }
+          
+          {/* {
+            data.map(el =>{
+              return(
+                <div data-aos='fade-up' className="singleDestination" key={el.id}>
+                  <div className="destImage">
+
+                    <img src={el.imgSrc} alt="Image Title" />
+                    <div className="overlayInfo">
+                      <h3>{el.destTitle}</h3>
+                      <p>
+                        {el.location}
+                      </p>
+
+                      <BsArrowRightShort className='icon'/>
+                    </div>
+
+                  </div>
+
+                  <div className="destFooter">
+                    <div className="number">
+                      0{el.id}
+                    </div>
+
+                    <div className="destText flex">
+                      <h6>
+                        {el.location}
+                      </h6>
+                      <span className='flex'>
+                        <span className='dot'>
+                          <BsDot className='icon'/>
+                        </span>
+                        {el.Tourism}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          } */}
         </div>
 
       </div>

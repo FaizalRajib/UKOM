@@ -11,12 +11,12 @@ import axios from 'axios'
 
 const Offers = () => {
 
-  const [data, setData] = useState([])
+  const [offer, setOffer] = useState([])
 
   useEffect(() => {
     axios("https://63547f47e64783fa8285a355.mockapi.io/Offer")
     .then((res) => {
-      setData(res.data)
+      setOffer(res.data)
     });
   }, []);
   
@@ -39,7 +39,7 @@ const Offers = () => {
 
         <div className="mainContent grid">
 
-          {data.map(el => {
+          {offer.map(el => {
             return(
               <div data-aos='fade-up' data-aos-duration='3100' className="singleOffer" key={el.id}> 
                 <div className="destImage">
